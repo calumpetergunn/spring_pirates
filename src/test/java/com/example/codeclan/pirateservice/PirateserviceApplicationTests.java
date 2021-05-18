@@ -40,10 +40,11 @@ class PirateserviceApplicationTests {
 		pirateRepository.save(jack);
 
 		Raid raid = new Raid("Morrinsville", 100);
-
 		raidRepository.save(raid);
 
-		raid.addPirates(jack);
+		ship.addPirate(jack);
+		shipRepository.save(ship);
+		raid.addPirate(jack);
 		raidRepository.save(raid);
 
 

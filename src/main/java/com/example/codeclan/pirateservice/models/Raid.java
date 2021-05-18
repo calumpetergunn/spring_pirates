@@ -44,6 +44,10 @@ public class Raid {
         this.pirates = new ArrayList<>();
     }
 
+    public Raid(){
+        
+    }
+
     public Long getId() {
         return id;
     }
@@ -76,7 +80,8 @@ public class Raid {
         this.loot = loot;
     }
 
-    public void addPirates(Pirate pirate){
+    public void addPirate(Pirate pirate){
         this.pirates.add(pirate);
     }
+
 }

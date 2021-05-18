@@ -52,6 +52,10 @@ public class Ship {
         return pirates;
     }
 
+    public void addPirate(Pirate pirate){
+        this.pirates.add(pirate);
+    }
+
     public void setPirates(List<Pirate> pirates) {
         this.pirates = pirates;
     }
